@@ -53,7 +53,7 @@ const Navbar = ({ index, privilege = true }) => {
                 />
               </button>
 
-              <button
+              <div
                 type="button"
                 // onClick={() => (window.location.href = "/profile")}
                 className={`w-[35px] h-[35px] ${
@@ -76,15 +76,15 @@ const Navbar = ({ index, privilege = true }) => {
                         onClick={toggleComponent}
                       />
                     </button>
-                    <ul className="flex flex-col p-2 gap-2">
+                    <ul className="flex flex-col p-2 gap-2 justify-center items-center">
                       <li
-                        className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1"
+                        className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1 w-full text-center"
                         onClick={() => (window.location.href = "/profile")}
                       >
                         Profile
                       </li>
                       <li
-                        className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1"
+                        className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1 w-full text-center"
                         onClick={() => (window.location.href = "/settings")}
                       >
                         Settings
@@ -95,7 +95,7 @@ const Navbar = ({ index, privilege = true }) => {
                     >
                       Plans
                     </li> */}
-                      <li className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1">
+                      <li className="hover:bg-[#035c67] hover:rounded-lg font-semibold p-1 w-full text-center">
                         Logout
                       </li>
                     </ul>
@@ -105,7 +105,7 @@ const Navbar = ({ index, privilege = true }) => {
                 {isOpen && (
                   <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"></div>
                 )}
-              </button>
+              </div>
             </div>
 
             <button
@@ -138,7 +138,7 @@ const Navbar = ({ index, privilege = true }) => {
             }`}
             id="navbar-cta"
           >
-            <ul className="text-[#035c67] flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="bg-white text-[#035c67] flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
               <li>
                 <a
                   href="/home"
@@ -147,7 +147,7 @@ const Navbar = ({ index, privilege = true }) => {
                     index === 0 &&
                     "md:border-b-2 border-b-[#035c67] bg-[#035c67] md:bg-transparent text-white md:text-[#035c67] rounded md:rounded-none"
                   }
-                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105  dark:border-gray-700
                 `}
                 >
                   Home
@@ -161,7 +161,7 @@ const Navbar = ({ index, privilege = true }) => {
                     index === 1 &&
                     "md:border-b-2 border-b-[#035c67] bg-[#035c67] md:bg-transparent text-white md:text-[#035c67]"
                   }
-                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105  dark:border-gray-700
                 `}
                   // className="cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -176,7 +176,7 @@ const Navbar = ({ index, privilege = true }) => {
                     index === 2 &&
                     "md:border-b-2 border-b-[#035c67] bg-[#035c67] md:bg-transparent text-white md:text-[#035c67]"
                   }
-                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105  dark:border-gray-700
                 `}
                   // className="cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -192,7 +192,7 @@ const Navbar = ({ index, privilege = true }) => {
                     index === 3 &&
                     "md:border-b-2 border-b-[#035c67] bg-[#035c67] md:bg-transparent text-white md:text-[#035c67]"
                   }
-                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+                   cursor-pointer block py-2 px-3 md:p-0  hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:border-gray-700
                 `}
                   // className="cursor-pointer block py-2 px-3 md:p-0 hover:bg-gray-100 md:hover:bg-transparent md:hover:scale-105 md:dark:hover:scale-105 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
